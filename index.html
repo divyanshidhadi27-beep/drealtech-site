@@ -68,7 +68,7 @@ nav {
   display: flex; align-items: center; gap: 10px;
 }
 .nav-logo img {
-  width: 38px; height: 38px; object-fit: contain;
+  width: 44px; height: 44px; object-fit: contain;
   filter: brightness(0) invert(1);
 }
 .nav-logo-text {
@@ -269,11 +269,15 @@ nav {
   display: flex; gap: 2.5rem;
   animation: fadeUp 0.7s 0.55s ease both;
 }
+.hero-stats > div { min-width: 0; }
 .hstat-num {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.2rem; line-height: 1; letter-spacing: 0.03em;
 }
-.hstat-label { font-size: 0.68rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 2px; }
+.hstat-label {
+  font-size: 0.68rem; color: var(--muted); letter-spacing: 0.1em;
+  text-transform: uppercase; margin-top: 2px; line-height: 1.25;
+}
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
@@ -507,7 +511,7 @@ footer {
 <div class="mobile-drawer" id="mobileDrawer">
   <a href="#services" onclick="closeDrawer()">Services</a>
   <a href="#why" onclick="closeDrawer()">Why Us</a>
-  <a href="#enquiry" class="mob-cta" onclick="closeDrawer()">Get Started</a>
+  <a href="#contact" class="mob-cta" onclick="closeDrawer()">Get Started</a>
 </div>
 
 <!-- NAV -->
@@ -520,9 +524,9 @@ footer {
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#why">Why Us</a></li>
-      <li><a href="#enquiry">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#enquiry" class="nav-cta">Get Started</a>
+    <a href="#contact" class="nav-cta">Get Started</a>
     <button class="hamburger" id="hamburger" onclick="toggleDrawer()">
       <span></span><span></span><span></span>
     </button>
@@ -542,7 +546,7 @@ footer {
     <p class="hero-sub">Custom software, websites & apps. Built for results. Based in India.</p>
     <div class="hero-actions">
       <button class="btn-lime">Start Your Project</button>
-      <a href="#enquiry" class="btn-wa">Enquire via WhatsApp</a>
+      <a href="https://wa.me/918234567890" class="btn-wa">Enquire via WhatsApp</a>
       <button class="btn-outline">Learn More</button>
     </div>
   </div>
@@ -713,8 +717,8 @@ footer {
   </div>
 </div>
 
-<!-- ENQUIRY -->
-<section id="enquiry">
+<!-- CONTACT -->
+<section id="contact">
   <div class="wrap">
     <div style="text-align: center; padding: 3rem 0;">
       <span class="label">Get in Touch</span>
@@ -751,7 +755,7 @@ footer {
       <ul>
         <li><a href="#why">About</a></li>
         <li><a href="#why">Why Us</a></li>
-        <li><a href="#enquiry">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="foot-col">
