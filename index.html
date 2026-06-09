@@ -6,24 +6,22 @@
 <meta name="description" content="Dreal Technologies — We help local businesses go digital, fast & affordable. Custom software, websites & apps. Based in India.">
 <title>Dreal Technologies - AI Websites & Business Automation</title>
 
-<!-- Favicons (basic) -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<!-- Simple Favicon -->
+<link rel="icon" type="image/png" href="/logo/logo.png">
 <meta name="theme-color" content="#060608">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Dreal Technologies - AI Websites & Business Automation">
 <meta property="og:description" content="Dreal Technologies — We help local businesses go digital, fast & affordable. Custom software, websites & apps. Based in India.">
-<meta property="og:image" content="https://www.drealtechnologies.net/favicon-512x512.png">
+<meta property="og:image" content="https://www.drealtechnologies.net/logo/logo.png">
 <meta property="og:url" content="https://www.drealtechnologies.net">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dreal Technologies - AI Websites & Business Automation">
 <meta name="twitter:description" content="Dreal Technologies — We help local businesses go digital, fast & affordable. Custom software, websites & apps. Based in India.">
-<meta name="twitter:image" content="https://www.drealtechnologies.net/favicon-512x512.png">
+<meta name="twitter:image" content="https://www.drealtechnologies.net/logo/logo.png">
 
 <!-- Canonical -->
 <link rel="canonical" href="https://www.drealtechnologies.net">
@@ -35,7 +33,7 @@
   "@type": "Organization",
   "name": "Dreal Technologies",
   "url": "https://www.drealtechnologies.net",
-  "logo": "https://www.drealtechnologies.net/favicon-512x512.png"
+  "logo": "https://www.drealtechnologies.net/logo/logo.png"
 }
 </script>
 
@@ -73,7 +71,273 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* original stylesheet continues unchanged... */
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(6, 6, 8, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--lime);
+}
+
+.nav-cta {
+  background: var(--grad);
+  color: var(--bg);
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(200, 251, 74, 0.05) 0%, rgba(74, 155, 251, 0.05) 100%);
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero .gradient-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--muted2);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--grad);
+  color: var(--bg);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(200, 251, 74, 0.2);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--border-bright);
+}
+
+.btn-secondary:hover {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  background: var(--surface2);
+  border-color: var(--lime);
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.service-card p {
+  color: var(--muted2);
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .cta-group {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">Dreal</div>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get Started</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div>
+    <h1>We help local businesses <span class="gradient-text">go digital</span></h1>
+    <p>Custom software, websites & apps. Fast, affordable, and built for success.</p>
+    <div class="cta-group">
+      <button class="btn btn-primary">Start Your Project</button>
+      <button class="btn btn-secondary">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+  <h2>What We Do</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>🌐 Websites</h3>
+      <p>Modern, fast, and beautiful websites that convert visitors into customers. Built with the latest technologies.</p>
+    </div>
+    <div class="service-card">
+      <h3>💻 Custom Software</h3>
+      <p>Tailored solutions for your business needs. From web applications to complex systems, we build it right.</p>
+    </div>
+    <div class="service-card">
+      <h3>📱 Mobile Apps</h3>
+      <p>Native and cross-platform mobile applications that your users will love. Available on iOS and Android.</p>
+    </div>
+    <div class="service-card">
+      <h3>⚙️ Automation</h3>
+      <p>Streamline your business processes with intelligent automation. Save time and reduce costs.</p>
+    </div>
+    <div class="service-card">
+      <h3>🤖 AI Solutions</h3>
+      <p>Leverage artificial intelligence to gain competitive advantages. From chatbots to predictive analytics.</p>
+    </div>
+    <div class="service-card">
+      <h3>🔧 Maintenance</h3>
+      <p>Ongoing support and maintenance for your digital products. Keep everything running smoothly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+  <p>&copy; 2024 Dreal Technologies. All rights reserved.</p>
+  <p>Helping businesses transform digitally since 2020.</p>
+</footer>
+
+</body>
+</html>
